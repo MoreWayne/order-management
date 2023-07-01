@@ -1,0 +1,9 @@
+server:
+  port: 8899
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: sadjhh29_x8
+    password: Xwb2igesv3jnXbl_*j
+    url: jdbc:mysql://rm-cn-pe337k02y001ngto.rwlb.rds.aliyuncs.com/galaxy
