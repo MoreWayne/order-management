@@ -17,6 +17,7 @@ public class TestController {
 
     @RequestMapping("/hello")
     public String sayHi() {
+
         List<User> users = userMapper.selectList(null);
         List<String> collect = users.stream().map(User::getUserName).toList();
         return collect.toString();

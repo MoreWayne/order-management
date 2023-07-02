@@ -7,3 +7,7 @@ spring:
     username: sadjhh29_x8
     password: Xwb2igesv3jnXbl_*j
     url: jdbc:mysql://rm-cn-pe337k02y001ngto.rwlb.rds.aliyuncs.com/galaxy
+
+logging:
+  file:
+    name:
