@@ -15,10 +15,10 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@TableName("client")
+@TableName("item")
 public class ItemDO {
 
-    @TableId(value = "order_id", type = IdType.AUTO)
+    @TableId(value = "item_id", type = IdType.AUTO)
     private Integer itemId;
 
     @TableField("order_id")

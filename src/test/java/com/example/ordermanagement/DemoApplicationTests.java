@@ -1,6 +1,7 @@
 package com.example.ordermanagement;
 
-import com.example.ordermanagement.domain.User;
+import com.example.ordermanagement.domain.OrderDO;
+import com.example.ordermanagement.domain.mapper.OrderMapper;
 import com.example.ordermanagement.domain.mapper.UserMapper;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
@@ -14,9 +15,12 @@ class DemoApplicationTests {
     @Resource
     private UserMapper userMapper;
 
+    @Resource
+    private OrderMapper orderMapper;
+
     @Test
     void contextLoads() {
-        List<User> users = userMapper.selectList(null);
+        List<OrderDO> users = orderMapper.selectList(null);
         users.forEach(System.out::println);
     }
 
