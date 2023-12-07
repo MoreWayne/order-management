@@ -1,6 +1,6 @@
 package com.example.ordermanagement;
 
-import com.example.ordermanagement.domain.OrderDO;
+import com.example.ordermanagement.domain.User;
 import com.example.ordermanagement.domain.mapper.OrderMapper;
 import com.example.ordermanagement.domain.mapper.UserMapper;
 import jakarta.annotation.Resource;
@@ -20,8 +20,9 @@ class DemoApplicationTests {
 
     @Test
     void contextLoads() {
-        List<OrderDO> users = orderMapper.selectList(null);
-        users.forEach(System.out::println);
+        System.out.println(("----- selectAll method test ------"));
+        List<User> userList = userMapper.selectList(null);
+        userList.forEach(System.out::println);
     }
 
 
